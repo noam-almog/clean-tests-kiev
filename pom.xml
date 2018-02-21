@@ -14,8 +14,9 @@
 
         <specs2.version>3.8.6</specs2.version>
         <scala.version>2.12</scala.version>
-        <scala.compiler.version>2.12.1</scala.compiler.version>
-        <async-http-client.version>2.0.29</async-http-client.version>
+        <scala.compiler.version>2.12.4</scala.compiler.version>
+        <async-http-client.version>2.4.1</async-http-client.version>
+        <http.testkit.version>0.1.17</http.testkit.version>
     </properties>
 
     <dependencies>
@@ -29,8 +30,15 @@
         <dependency>
             <groupId>com.wix</groupId>
             <artifactId>http-testkit_${scala.version}</artifactId>
-            <version>0.1-SNAPSHOT</version>
+            <version>${http.testkit.version}</version>
         </dependency>
+
+        <dependency>
+            <groupId>com.wix</groupId>
+            <artifactId>http-testkit-marshaller-jackson_${scala.version}</artifactId>
+            <version>${http.testkit.version}</version>
+        </dependency>
+
 
         <dependency>
             <groupId>org.slf4j</groupId>
